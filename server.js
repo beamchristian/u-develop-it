@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use('/api', apiRoutes);
 
-// Not Found response for unmatched routes
+// Default response for any other request (Not Found)
 app.use((req, res) => {
   res.status(404).end();
 });
